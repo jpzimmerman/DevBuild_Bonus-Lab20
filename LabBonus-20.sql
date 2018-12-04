@@ -2,7 +2,7 @@ USE Northwind;
 /*  1 */ SELECT * FROM Customers;
 /*  2 */ SELECT * FROM Customers WHERE City IN ('London', 'Paris');
 /*  3 */ SELECT DISTINCT City FROM Customers;
-/*  4 */ SELECT FirstName FROM Employees; 
+/*  4 */ SELECT FirstName FROM Employees ORDER BY FirstName ASC; 
 /*  5 */ SELECT AVG(UnitPrice) AS "Average Unit Price" FROM Products;
 /*  6 */ SELECT ProductName, Products.UnitsInStock, UnitPrice FROM Products 
 			WHERE UnitPrice = (SELECT MAX(UnitPrice) 
